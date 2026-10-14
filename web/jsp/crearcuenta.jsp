@@ -1,4 +1,4 @@
-<form action="/registro" method="post">
+<form action="${pageContext.request.contextPath}/registro" method="post">
 
     <label>Nombre Completo</label>
     <input

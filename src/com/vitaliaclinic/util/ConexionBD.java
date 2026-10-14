@@ -1,5 +1,4 @@
 package com.vitaliaclinic.util;
-
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -16,12 +15,20 @@ public class ConexionBD {
             "";
 
     public static Connection obtenerConexion()
-            throws SQLException {
+        throws SQLException {
+            try {
+                Class.forName(
+                "org.mariadb.jdbc.Driver");
 
-        return DriverManager.getConnection(
-                URL,
-                USUARIO,
-                CLAVE
-        );
+        } catch (ClassNotFoundException e) {
+                throw new SQLException(
+                "Driver MariaDB no encontrado",
+                e);
     }
+
+    return DriverManager.getConnection(
+            URL,
+            USUARIO,
+            CLAVE);
+        }
 }
