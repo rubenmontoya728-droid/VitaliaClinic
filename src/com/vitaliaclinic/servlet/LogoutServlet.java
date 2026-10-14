@@ -1,0 +1,30 @@
+package com.vitaliaclinic.servlet;
+
+import java.io.IOException;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
+
+public class LogoutServlet extends HttpServlet {
+
+    @Override
+    protected void doGet(
+            HttpServletRequest request,
+            HttpServletResponse response)
+            throws ServletException, IOException {
+
+        HttpSession sesion =
+                request.getSession(false);
+
+        if (sesion != null) {
+
+            sesion.invalidate();
+        }
+
+        response.sendRedirect(
+                request.getContextPath()
+                + "/jsp/login.jsp");
+    }
+}
