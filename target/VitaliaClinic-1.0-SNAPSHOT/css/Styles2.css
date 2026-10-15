@@ -1,0 +1,180 @@
+/* ------------------------------
+   VARIABLES
+--------------------------------*/
+:root {
+  --primary: #1bb8c9;
+  --primary-dark: #0a3d62;
+  --bg: #f4f7fb;
+  --text: #333;
+  --shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* ------------------------------
+   RESET
+--------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+/* ------------------------------
+   GENERAL
+--------------------------------*/
+body {
+  display: flex;
+  background: var(--bg);
+  min-height: 100vh;
+}
+
+/* ------------------------------
+   SIDEBAR
+--------------------------------*/
+.sidebar {
+  width: 250px;
+  min-width: 250px;
+  height: 100vh;
+
+  position: fixed;
+  left: 0;
+  top: 0;
+
+  background: var(--primary-dark);
+  color: #fff;
+
+  display: flex;
+  flex-direction: column;
+
+  box-shadow: 4px 0 12px rgba(0,0,0,0.1);
+
+  overflow-y: auto;
+}
+
+/* ------------------------------
+   LOGO
+--------------------------------*/
+.logo-area {
+  background: #ffffff;
+  padding: 10px;
+  text-align: center;
+}
+
+.logo-image {
+  width: 100%;
+  max-width: 220px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.logo-text {
+  display: none;
+}
+
+/* ------------------------------
+   MENU
+--------------------------------*/
+.menu {
+  list-style: none;
+  margin: 20px 0;
+  padding: 0;
+}
+
+.menu li {
+  margin: 14px;
+}
+
+.menu li a {
+  display: block;
+  width: 100%;
+
+  background: #295779;
+
+  color: #ffffff;
+  text-decoration: none;
+
+  padding: 18px 22px;
+
+  border-radius: 14px;
+
+  font-size: 18px;
+  font-weight: 700;
+
+  transition: all 0.2s ease;
+}
+
+.menu li a:hover {
+  background: #34709d;
+  color: #ffffff;
+}
+
+.menu li a:visited {
+  color: #ffffff;
+}
+
+.menu li a.active {
+  background: #28bdd3;
+  color: #ffffff;
+}
+
+/* ------------------------------
+   CONTENIDO PRINCIPAL
+--------------------------------*/
+.main-content {
+  flex: 1;
+
+  margin-left: 250px;
+
+  padding: 20px 30px;
+
+  min-height: 100vh;
+}
+
+.topbar {
+  background: #ffffff;
+  padding: 20px 30px;
+  border-radius: 15px;
+  box-shadow: var(--shadow);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 25px;
+}
+
+.topbar h1,
+.topbar h2 {
+  color: #000;
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.user-info {
+  font-size: 16px;
+  color: #555;
+}
+
+/* ------------------------------
+   CONTENT BOX
+--------------------------------*/
+.content-box {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+  min-height: 500px;
+}
+
+.content-box h2 {
+  color: var(--primary-dark);
+  margin-bottom: 25px;
+  font-size: 32px;
+}
+
+.content-box p {
+  color: #555;
+  font-size: 18px;
+  line-height: 1.6;
+}

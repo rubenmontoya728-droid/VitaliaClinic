@@ -8,13 +8,17 @@
   --text: #333;
   --shadow: 0 10px 25px rgba(0,0,0,0.08);
 }
-/* Reset y tipografía base (igual que en styles.css) */
+
+/* ------------------------------
+   RESET
+--------------------------------*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
 }
+
 /* ------------------------------
    GENERAL
 --------------------------------*/
@@ -22,74 +26,96 @@ body {
   display: flex;
   background: var(--bg);
   min-height: 100vh;
-  margin: 0;
-  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
 }
 
 /* ------------------------------
    SIDEBAR
 --------------------------------*/
 .sidebar {
-  width: 240px;
+  width: 250px;
+  min-width: 250px;
+  height: 100vh;
+
+  position: fixed;
+  left: 0;
+  top: 0;
+
   background: var(--primary-dark);
   color: #fff;
-  padding: 20px 0;
+
   display: flex;
   flex-direction: column;
+
   box-shadow: 4px 0 12px rgba(0,0,0,0.1);
+
+  overflow-y: auto;
 }
 
+/* ------------------------------
+   LOGO
+--------------------------------*/
 .logo-area {
+  background: #ffffff;
+  padding: 10px;
   text-align: center;
-  margin-bottom: 30px;
 }
 
-.logo-icon {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: 2px solid #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  font-weight: 700;
-  font-size: 20px;
+.logo-image {
+  width: 100%;
+  max-width: 220px;
+  height: auto;
+  display: block;
   margin: 0 auto;
 }
 
-.logo-text span {
-  color: #fff;
-  font-weight: 700;
-  font-size: 15px;
+.logo-text {
+  display: none;
 }
 
-.logo-text small {
-  display: block;
-  font-size: 11px;
-  color: #ddd;
-}
-
+/* ------------------------------
+   MENU
+--------------------------------*/
 .menu {
   list-style: none;
+  margin: 20px 0;
   padding: 0;
-  margin: 0;
 }
 
 .menu li {
-  padding: 12px 20px;
-  cursor: pointer;
-  font-size: 15px;
-  transition: 0.2s;
+  margin: 14px;
 }
 
-.menu li:hover {
-  background: rgba(255,255,255,0.15);
+.menu li a {
+  display: block;
+  width: 100%;
+
+  background: #295779;
+
+  color: #ffffff;
+  text-decoration: none;
+
+  padding: 18px 22px;
+
+  border-radius: 14px;
+
+  font-size: 18px;
+  font-weight: 700;
+
+  transition: all 0.2s ease;
 }
 
-.menu li.active {
-  background: rgba(255,255,255,0.25);
-  font-weight: bold;
+.menu li a:hover {
+  background: #34709d;
+  color: #ffffff;
+}
+
+.menu li a:visited {
+  color: #ffffff;
+}
+
+.menu li a.active {
+  background: #28bdd3;
+  color: #ffffff;
 }
 
 /* ------------------------------
@@ -97,48 +123,58 @@ body {
 --------------------------------*/
 .main-content {
   flex: 1;
+
+  margin-left: 250px;
+
   padding: 20px 30px;
+
+  min-height: 100vh;
 }
 
 .topbar {
-  background: #fff;
-  padding: 14px 20px;
-  border-radius: 10px;
+  background: #ffffff;
+  padding: 20px 30px;
+  border-radius: 15px;
   box-shadow: var(--shadow);
-  margin-bottom: 25px;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  margin-bottom: 25px;
 }
 
-.topbar h1 {
-  font-size: 22px;
-  color: var(--primary-dark);
-  margin: 0;
+.topbar h1,
+.topbar h2 {
+  color: #000;
+  font-size: 28px;
+  font-weight: 800;
 }
 
 .user-info {
-  font-size: 14px;
+  font-size: 16px;
   color: #555;
 }
 
 /* ------------------------------
-   CONTENEDOR DE CONTENIDO
+   CONTENT BOX
 --------------------------------*/
 .content-box {
-  background: #fff;
-  padding: 25px;
-  border-radius: 12px;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 20px;
   box-shadow: var(--shadow);
-  min-height: 300px;
+  min-height: 500px;
 }
 
 .content-box h2 {
-  margin-bottom: 10px;
   color: var(--primary-dark);
+  margin-bottom: 25px;
+  font-size: 32px;
 }
 
 .content-box p {
   color: #555;
-  font-size: 15px;
+  font-size: 18px;
+  line-height: 1.6;
 }
