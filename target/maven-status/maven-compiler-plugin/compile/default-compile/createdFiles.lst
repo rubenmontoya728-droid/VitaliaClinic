@@ -1,6 +1,11 @@
 com\vitaliaclinic\servlet\RegistroServlet.class
+com\vitaliaclinic\model\Solicitud.class
+com\vitaliaclinic\dao\HistorialSolicitudDAO.class
 com\vitaliaclinic\servlet\LoginServlet.class
 com\vitaliaclinic\dao\UsuarioDAO.class
+com\vitaliaclinic\servlet\GerenciaServlet.class
+com\vitaliaclinic\dao\SolicitudDAO.class
+com\vitaliaclinic\model\HistorialSolicitud.class
 com\vitaliaclinic\util\PruebaConexion.class
 com\vitaliaclinic\servlet\LogoutServlet.class
 com\vitaliaclinic\util\ConexionBD.class

@@ -24,7 +24,7 @@
         </div>
         <ul class="menu">
             <li><a href="${pageContext.request.contextPath}/jsp/dashboard.jsp" class="active menu-button menu-button-active">Inicio</a></li>
-            <li><a href="${pageContext.request.contextPath}/jsp/gerencia.jsp" class="menu-button">Gerencia</a></li>
+            <li><a href="${pageContext.request.contextPath}/gerencia" class="menu-button">Gerencia</a></li>
             <li><a href="${pageContext.request.contextPath}/jsp/errorvitalia.jsp" class="menu-button">Portal Médico</a></li>
             <li><a href="${pageContext.request.contextPath}/jsp/errorvitalia.jsp" class="menu-button">Farmacia</a></li>
             <li><a href="${pageContext.request.contextPath}/jsp/errorvitalia.jsp" class="menu-button">Contable</a></li>

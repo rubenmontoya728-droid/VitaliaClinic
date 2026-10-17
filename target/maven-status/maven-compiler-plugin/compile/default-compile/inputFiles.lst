@@ -1,7 +1,12 @@
+D:\SENA\ADSO\VitaliaClinic\src\com\vitaliaclinic\servlet\GerenciaServlet.java
+D:\SENA\ADSO\VitaliaClinic\src\com\vitaliaclinic\model\HistorialSolicitud.java
 D:\SENA\ADSO\VitaliaClinic\src\com\vitaliaclinic\servlet\RegistroServlet.java
 D:\SENA\ADSO\VitaliaClinic\src\com\vitaliaclinic\util\ConexionBD.java
 D:\SENA\ADSO\VitaliaClinic\src\com\vitaliaclinic\servlet\LoginServlet.java
+D:\SENA\ADSO\VitaliaClinic\src\com\vitaliaclinic\dao\HistorialSolicitudDAO.java
 D:\SENA\ADSO\VitaliaClinic\src\com\vitaliaclinic\dao\UsuarioDAO.java
 D:\SENA\ADSO\VitaliaClinic\src\com\vitaliaclinic\servlet\LogoutServlet.java
+D:\SENA\ADSO\VitaliaClinic\src\com\vitaliaclinic\model\Solicitud.java
 D:\SENA\ADSO\VitaliaClinic\src\com\vitaliaclinic\model\Usuario.java
+D:\SENA\ADSO\VitaliaClinic\src\com\vitaliaclinic\dao\SolicitudDAO.java
 D:\SENA\ADSO\VitaliaClinic\src\com\vitaliaclinic\util\PruebaConexion.java

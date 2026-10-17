@@ -1,0 +1,306 @@
+﻿{
+    "proyecto":  "VitaliaClinic",
+    "exclusiones":  [
+                        {
+                            "nombre":  ".git",
+                            "motivo":  "metadatos de control de versiones"
+                        },
+                        {
+                            "nombre":  "target",
+                            "motivo":  "archivos generados por la compilacion"
+                        }
+                    ],
+    "estructura":  {
+                       "nombre":  "VitaliaClinic",
+                       "tipo":  "directorio",
+                       "contenido":  [
+                                         {
+                                             "nombre":  ".github",
+                                             "tipo":  "directorio",
+                                             "contenido":  [
+                                                               {
+                                                                   "nombre":  "modernize",
+                                                                   "tipo":  "directorio",
+                                                                   "contenido":  [
+                                                                                     {
+                                                                                         "nombre":  "java-upgrade",
+                                                                                         "tipo":  "directorio",
+                                                                                         "contenido":  [
+                                                                                                           {
+                                                                                                               "nombre":  "hooks",
+                                                                                                               "tipo":  "directorio",
+                                                                                                               "contenido":  [
+                                                                                                                                 {
+                                                                                                                                     "nombre":  "scripts",
+                                                                                                                                     "tipo":  "directorio",
+                                                                                                                                     "contenido":  [
+                                                                                                                                                       {
+                                                                                                                                                           "nombre":  "recordToolUse.ps1",
+                                                                                                                                                           "tipo":  "archivo"
+                                                                                                                                                       },
+                                                                                                                                                       {
+                                                                                                                                                           "nombre":  "recordToolUse.sh",
+                                                                                                                                                           "tipo":  "archivo"
+                                                                                                                                                       }
+                                                                                                                                                   ]
+                                                                                                                                 }
+                                                                                                                             ]
+                                                                                                           },
+                                                                                                           {
+                                                                                                               "nombre":  ".gitignore",
+                                                                                                               "tipo":  "archivo"
+                                                                                                           }
+                                                                                                       ]
+                                                                                     }
+                                                                                 ]
+                                                               }
+                                                           ]
+                                         },
+                                         {
+                                             "nombre":  ".vscode",
+                                             "tipo":  "directorio",
+                                             "contenido":  [
+                                                               {
+                                                                   "nombre":  "settings.json",
+                                                                   "tipo":  "archivo"
+                                                               }
+                                                           ]
+                                         },
+                                         {
+                                             "nombre":  "database",
+                                             "tipo":  "directorio",
+                                             "contenido":  [
+                                                               {
+                                                                   "nombre":  "vitaliaclinic.sql",
+                                                                   "tipo":  "archivo"
+                                                               }
+                                                           ]
+                                         },
+                                         {
+                                             "nombre":  "docs",
+                                             "tipo":  "directorio",
+                                             "contenido":  [
+
+                                                           ]
+                                         },
+                                         {
+                                             "nombre":  "lib",
+                                             "tipo":  "directorio",
+                                             "contenido":  [
+                                                               {
+                                                                   "nombre":  "mariadb-java-client-3.5.10.jar",
+                                                                   "tipo":  "archivo"
+                                                               },
+                                                               {
+                                                                   "nombre":  "servlet-api.jar",
+                                                                   "tipo":  "archivo"
+                                                               }
+                                                           ]
+                                         },
+                                         {
+                                             "nombre":  "resources",
+                                             "tipo":  "directorio",
+                                             "contenido":  [
+
+                                                           ]
+                                         },
+                                         {
+                                             "nombre":  "src",
+                                             "tipo":  "directorio",
+                                             "contenido":  [
+                                                               {
+                                                                   "nombre":  "com",
+                                                                   "tipo":  "directorio",
+                                                                   "contenido":  [
+                                                                                     {
+                                                                                         "nombre":  "vitaliaclinic",
+                                                                                         "tipo":  "directorio",
+                                                                                         "contenido":  [
+                                                                                                           {
+                                                                                                               "nombre":  "apirest",
+                                                                                                               "tipo":  "directorio",
+                                                                                                               "contenido":  [
+
+                                                                                                                             ]
+                                                                                                           },
+                                                                                                           {
+                                                                                                               "nombre":  "dao",
+                                                                                                               "tipo":  "directorio",
+                                                                                                               "contenido":  [
+                                                                                                                                 {
+                                                                                                                                     "nombre":  "HistorialSolicitudDAO.java",
+                                                                                                                                     "tipo":  "archivo"
+                                                                                                                                 },
+                                                                                                                                 {
+                                                                                                                                     "nombre":  "SolicitudDAO.java",
+                                                                                                                                     "tipo":  "archivo"
+                                                                                                                                 },
+                                                                                                                                 {
+                                                                                                                                     "nombre":  "UsuarioDAO.java",
+                                                                                                                                     "tipo":  "archivo"
+                                                                                                                                 }
+                                                                                                                             ]
+                                                                                                           },
+                                                                                                           {
+                                                                                                               "nombre":  "model",
+                                                                                                               "tipo":  "directorio",
+                                                                                                               "contenido":  [
+                                                                                                                                 {
+                                                                                                                                     "nombre":  "HistorialSolicitud.java",
+                                                                                                                                     "tipo":  "archivo"
+                                                                                                                                 },
+                                                                                                                                 {
+                                                                                                                                     "nombre":  "Solicitud.java",
+                                                                                                                                     "tipo":  "archivo"
+                                                                                                                                 },
+                                                                                                                                 {
+                                                                                                                                     "nombre":  "Usuario.java",
+                                                                                                                                     "tipo":  "archivo"
+                                                                                                                                 }
+                                                                                                                             ]
+                                                                                                           },
+                                                                                                           {
+                                                                                                               "nombre":  "service",
+                                                                                                               "tipo":  "directorio",
+                                                                                                               "contenido":  [
+
+                                                                                                                             ]
+                                                                                                           },
+                                                                                                           {
+                                                                                                               "nombre":  "servlet",
+                                                                                                               "tipo":  "directorio",
+                                                                                                               "contenido":  [
+                                                                                                                                 {
+                                                                                                                                     "nombre":  "GerenciaServlet.java",
+                                                                                                                                     "tipo":  "archivo"
+                                                                                                                                 },
+                                                                                                                                 {
+                                                                                                                                     "nombre":  "LoginServlet.java",
+                                                                                                                                     "tipo":  "archivo"
+                                                                                                                                 },
+                                                                                                                                 {
+                                                                                                                                     "nombre":  "LogoutServlet.java",
+                                                                                                                                     "tipo":  "archivo"
+                                                                                                                                 },
+                                                                                                                                 {
+                                                                                                                                     "nombre":  "RegistroServlet.java",
+                                                                                                                                     "tipo":  "archivo"
+                                                                                                                                 }
+                                                                                                                             ]
+                                                                                                           },
+                                                                                                           {
+                                                                                                               "nombre":  "util",
+                                                                                                               "tipo":  "directorio",
+                                                                                                               "contenido":  [
+                                                                                                                                 {
+                                                                                                                                     "nombre":  "ConexionBD.java",
+                                                                                                                                     "tipo":  "archivo"
+                                                                                                                                 },
+                                                                                                                                 {
+                                                                                                                                     "nombre":  "PruebaConexion.java",
+                                                                                                                                     "tipo":  "archivo"
+                                                                                                                                 }
+                                                                                                                             ]
+                                                                                                           }
+                                                                                                       ]
+                                                                                     }
+                                                                                 ]
+                                                               }
+                                                           ]
+                                         },
+                                         {
+                                             "nombre":  "web",
+                                             "tipo":  "directorio",
+                                             "contenido":  [
+                                                               {
+                                                                   "nombre":  "css",
+                                                                   "tipo":  "directorio",
+                                                                   "contenido":  [
+                                                                                     {
+                                                                                         "nombre":  "stylegerencia.css",
+                                                                                         "tipo":  "archivo"
+                                                                                     },
+                                                                                     {
+                                                                                         "nombre":  "styles.css",
+                                                                                         "tipo":  "archivo"
+                                                                                     },
+                                                                                     {
+                                                                                         "nombre":  "Styles2.css",
+                                                                                         "tipo":  "archivo"
+                                                                                     }
+                                                                                 ]
+                                                               },
+                                                               {
+                                                                   "nombre":  "img",
+                                                                   "tipo":  "directorio",
+                                                                   "contenido":  [
+                                                                                     {
+                                                                                         "nombre":  "Vitalia.jpg",
+                                                                                         "tipo":  "archivo"
+                                                                                     }
+                                                                                 ]
+                                                               },
+                                                               {
+                                                                   "nombre":  "js",
+                                                                   "tipo":  "directorio",
+                                                                   "contenido":  [
+
+                                                                                 ]
+                                                               },
+                                                               {
+                                                                   "nombre":  "jsp",
+                                                                   "tipo":  "directorio",
+                                                                   "contenido":  [
+                                                                                     {
+                                                                                         "nombre":  "crearcuenta.jsp",
+                                                                                         "tipo":  "archivo"
+                                                                                     },
+                                                                                     {
+                                                                                         "nombre":  "dashboard.jsp",
+                                                                                         "tipo":  "archivo"
+                                                                                     },
+                                                                                     {
+                                                                                         "nombre":  "errorvitalia.jsp",
+                                                                                         "tipo":  "archivo"
+                                                                                     },
+                                                                                     {
+                                                                                         "nombre":  "gerencia.jsp",
+                                                                                         "tipo":  "archivo"
+                                                                                     },
+                                                                                     {
+                                                                                         "nombre":  "login.jsp",
+                                                                                         "tipo":  "archivo"
+                                                                                     },
+                                                                                     {
+                                                                                         "nombre":  "recuperar.jsp",
+                                                                                         "tipo":  "archivo"
+                                                                                     }
+                                                                                 ]
+                                                               },
+                                                               {
+                                                                   "nombre":  "WEB-INF",
+                                                                   "tipo":  "directorio",
+                                                                   "contenido":  [
+                                                                                     {
+                                                                                         "nombre":  "web.xml",
+                                                                                         "tipo":  "archivo"
+                                                                                     }
+                                                                                 ]
+                                                               },
+                                                               {
+                                                                   "nombre":  "index.jsp",
+                                                                   "tipo":  "archivo"
+                                                               }
+                                                           ]
+                                         },
+                                         {
+                                             "nombre":  "pom.xml",
+                                             "tipo":  "archivo"
+                                         },
+                                         {
+                                             "nombre":  "README.md",
+                                             "tipo":  "archivo"
+                                         }
+                                     ]
+                   }
+}
